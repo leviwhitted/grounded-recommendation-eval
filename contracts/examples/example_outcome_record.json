@@ -1,0 +1,23 @@
+{
+  "outcome_record_id": "example-outcome-2026-04-08-001",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T19:10:00Z",
+  "subject": "Synthetic outcome record for recommendation traceability demonstration",
+  "related_recommendation_ids": [
+    "example-rec-2026-04-08-001"
+  ],
+  "related_evidence_bundle_ids": [
+    "example-bundle-2026-04-08-001"
+  ],
+  "status": "in_progress",
+  "observed_result": "Contract artifacts for recommendation handling are present, but no committed runtime producer or consumer is yet observed.",
+  "impact_summary": "Traceability between evidence bundles and recommendations is now explicit at the contract level, reducing ambiguity for future implementation work.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Observed from current synthetic contract artifacts, while operational outcomes remain limited by sparse implementation state."
+  },
+  "unknowns": [
+    "Which committed component will first emit outcome records as part of normal project workflow."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production output."
+}

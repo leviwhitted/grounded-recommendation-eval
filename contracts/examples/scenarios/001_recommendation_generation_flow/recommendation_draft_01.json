@@ -1,0 +1,31 @@
+{
+  "draft_id": "scenario-001-rec-draft-01",
+  "subject": "Synthetic recommendation draft for contract-first recommendation flow",
+  "title": "Proceed with contract-linked recommendation materialization planning",
+  "summary": "Use the existing contract chain as the immediate basis for recommendation handling before introducing runtime-specific implementation details.",
+  "recommendation_type": "implement",
+  "supporting_evidence_bundle_ids": [
+    "scenario-001-bundle-01"
+  ],
+  "rationale": "The evidence bundle shows a stable contract foundation suitable for draft-to-persisted recommendation progression at the artifact level.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Evidence supports contract readiness, but runtime integration ownership remains unknown."
+  },
+  "priority": {
+    "level": "high",
+    "urgency": "soon",
+    "rationale": "Clarifying contract-aligned recommendation materialization early reduces downstream ambiguity."
+  },
+  "assumptions": [
+    "Draft and persisted recommendation artifacts can remain distinct without defining promotion mechanics in this fixture."
+  ],
+  "unknowns": [
+    "Which committed component will first materialize recommendation drafts."
+  ],
+  "suggested_next_steps": [
+    "Keep generated drafts valid against recommendation_draft.schema.json.",
+    "When needed, represent persisted recommendations as separate recommendation-schema artifacts."
+  ],
+  "notes": "This file intentionally mirrors the embedded draft in recommendation_generation_response_01.json."
+}

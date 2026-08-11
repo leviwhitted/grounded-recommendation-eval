@@ -1,0 +1,47 @@
+{
+  "response_id": "scenario-001-recgen-res-01",
+  "request_id": "scenario-001-recgen-req-01",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:32:00Z",
+  "subject": "Synthetic response returning a recommendation draft for fixture flow",
+  "generated_recommendations": [
+    {
+      "draft_id": "scenario-001-rec-draft-01",
+      "subject": "Synthetic recommendation draft for contract-first recommendation flow",
+      "title": "Proceed with contract-linked recommendation materialization planning",
+      "summary": "Use the existing contract chain as the immediate basis for recommendation handling before introducing runtime-specific implementation details.",
+      "recommendation_type": "implement",
+      "supporting_evidence_bundle_ids": [
+        "scenario-001-bundle-01"
+      ],
+      "rationale": "The evidence bundle shows a stable contract foundation suitable for draft-to-persisted recommendation progression at the artifact level.",
+      "confidence": {
+        "level": "medium",
+        "rationale": "Evidence supports contract readiness, but runtime integration ownership remains unknown."
+      },
+      "priority": {
+        "level": "high",
+        "urgency": "soon",
+        "rationale": "Clarifying contract-aligned recommendation materialization early reduces downstream ambiguity."
+      },
+      "assumptions": [
+        "Draft and persisted recommendation artifacts can remain distinct without defining promotion mechanics in this fixture."
+      ],
+      "unknowns": [
+        "Which committed component will first materialize recommendation drafts."
+      ],
+      "suggested_next_steps": [
+        "Keep generated drafts valid against recommendation_draft.schema.json.",
+        "When needed, represent persisted recommendations as separate recommendation-schema artifacts."
+      ],
+      "notes": "Synthetic draft included inside response wrapper for fixture demonstration."
+    }
+  ],
+  "unresolved_unknowns": [
+    "Runtime recommendation generation pipeline behavior is not defined in committed repo state."
+  ],
+  "warnings": [
+    "Synthetic fixture output for contract-chain demonstration only."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production response output."
+}

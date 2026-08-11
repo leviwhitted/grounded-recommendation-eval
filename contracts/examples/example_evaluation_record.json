@@ -1,0 +1,25 @@
+{
+  "evaluation_record_id": "example-eval-2026-04-08-001",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T19:35:00Z",
+  "subject": "Synthetic evaluation record for recommendation/outcome contract linkage",
+  "related_recommendation_ids": [
+    "example-rec-2026-04-08-001"
+  ],
+  "related_outcome_record_ids": [
+    "example-outcome-2026-04-08-001"
+  ],
+  "related_evidence_bundle_ids": [
+    "example-bundle-2026-04-08-001"
+  ],
+  "evaluation_result": "partially_successful",
+  "evaluation_summary": "Recommendation-to-outcome traceability has improved as intended, but full effectiveness remains unconfirmed until committed runtime producers/consumers exist.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Evaluation is grounded in linked synthetic recommendation and outcome artifacts, with remaining uncertainty due to sparse implementation state."
+  },
+  "unknowns": [
+    "Whether future implementation behavior will maintain outcome and evaluation record completeness over time."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production output."
+}

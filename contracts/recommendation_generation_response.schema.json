@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/leviwhitted/clixsy-oracle-agent/blob/main/contracts/recommendation_generation_response.schema.json",
+  "title": "Oracle Recommendation Generation Response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "response_id",
+    "request_id",
+    "project_id",
+    "created_at",
+    "subject",
+    "generated_recommendations",
+    "unresolved_unknowns"
+  ],
+  "properties": {
+    "response_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_recommendations": {
+      "type": "array",
+      "items": {
+        "$ref": "recommendation_draft.schema.json"
+      }
+    },
+    "unresolved_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

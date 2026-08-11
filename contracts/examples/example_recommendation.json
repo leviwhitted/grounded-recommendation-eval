@@ -1,0 +1,33 @@
+{
+  "recommendation_id": "example-rec-2026-04-08-001",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T18:20:00Z",
+  "subject": "Synthetic recommendation example tied to evidence contract artifacts",
+  "title": "Prioritize contract-first validation before runtime-specific implementation",
+  "summary": "Use evidence bundle outputs as the required basis for recommendation generation and review before committing to stack-specific execution details.",
+  "recommendation_type": "implement",
+  "supporting_evidence_bundle_ids": [
+    "example-bundle-2026-04-08-001"
+  ],
+  "rationale": "The cited bundle indicates documentation-first project state and unresolved runtime unknowns, so a contract-first implementation path reduces overcommitment risk.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Grounded in the current synthetic evidence bundle but still limited by unknown runtime producer/consumer details."
+  },
+  "priority": {
+    "level": "high",
+    "urgency": "soon",
+    "rationale": "Establishing recommendation traceability early prevents downstream ambiguity as additional artifacts are introduced."
+  },
+  "assumptions": [
+    "Future recommendation producers will consume evidence bundle ids directly or through equivalent stable references."
+  ],
+  "unknowns": [
+    "Which specific component will first produce recommendation artifacts in committed code."
+  ],
+  "suggested_next_steps": [
+    "Validate this recommendation example against recommendation.schema.json as part of contract hygiene checks.",
+    "Keep recommendations linked to bundle ids instead of embedding raw source evidence directly."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production output."
+}

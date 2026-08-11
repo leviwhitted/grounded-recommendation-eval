@@ -1,0 +1,31 @@
+{
+  "draft_id": "example-rec-draft-2026-04-08-001",
+  "subject": "Synthetic recommendation draft for contract demonstration",
+  "title": "Continue contract-first progression before runtime coupling",
+  "summary": "Use evidence-linked contract artifacts as the immediate recommendation output path until committed runtime producers and consumers exist.",
+  "recommendation_type": "implement",
+  "supporting_evidence_bundle_ids": [
+    "example-bundle-2026-04-08-001"
+  ],
+  "rationale": "The cited evidence bundle reflects a sparse, documentation-forward phase where stable contract boundaries reduce premature implementation coupling.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Grounded in known synthetic evidence with remaining uncertainty from unresolved runtime details."
+  },
+  "priority": {
+    "level": "high",
+    "urgency": "soon",
+    "rationale": "Early clarity of recommendation intent and traceability reduces downstream ambiguity."
+  },
+  "assumptions": [
+    "Future systems may map drafts into persisted recommendation records using separate lifecycle decisions."
+  ],
+  "unknowns": [
+    "Which committed component will first materialize recommendation drafts into persisted records."
+  ],
+  "suggested_next_steps": [
+    "Validate draft objects against recommendation_draft.schema.json.",
+    "Keep draft evidence linkage explicit through supporting_evidence_bundle_ids."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production output."
+}

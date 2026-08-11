@@ -1,0 +1,89 @@
+{
+  "cases": {
+    "ctl-001-well-formed": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "ctl-002-multi-citation": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "ctl-003-ids-mid-sentence": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "ref-001-no-kb-citations": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-002-empty-kb-citations": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-003-no-finding-citations": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-004-missing-trace": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-005-whitespace-trace": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-006-fabricated-atom": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-007-fabricated-finding": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-008-one-valid-one-fabricated-atom": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-009-trace-omits-atom": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-010-trace-omits-finding": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "ref-011-trace-names-uncited-ids": {
+      "expected": "reject",
+      "actual": "reject"
+    },
+    "sem-001-drive-by-citation": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "sem-002-reversed-relationship": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "sem-003-misdescribed-records": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "sem-004-non-sequitur-action": {
+      "expected": "accept",
+      "actual": "accept"
+    },
+    "sem-005-contradictory-evidence-ignored": {
+      "expected": "accept",
+      "actual": "accept"
+    }
+  },
+  "summary": {
+    "total_cases": 19,
+    "referential_failure_classes": 11,
+    "referential_caught": 11,
+    "semantic_failure_classes": 5,
+    "semantic_caught": 0,
+    "controls": 3,
+    "false_positives": 0
+  }
+}

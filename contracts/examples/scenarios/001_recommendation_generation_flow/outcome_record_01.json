@@ -1,0 +1,23 @@
+{
+  "outcome_record_id": "scenario-001-outcome-01",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:40:00Z",
+  "subject": "Synthetic observed outcome for scenario-001 persisted recommendation",
+  "related_recommendation_ids": [
+    "scenario-001-rec-01"
+  ],
+  "related_evidence_bundle_ids": [
+    "scenario-001-bundle-01"
+  ],
+  "status": "in_progress",
+  "observed_result": "Recommendation references are now represented as persisted artifacts in the synthetic fixture chain, while runtime execution remains unimplemented.",
+  "impact_summary": "Artifact-level traceability from recommendation to outcome is established for fixture purposes.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Observation is clear at the contract artifact layer, but operational effectiveness cannot be confirmed in the current sparse repo phase."
+  },
+  "unknowns": [
+    "How runtime execution will affect outcome completeness once implementation exists."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production outcome."
+}

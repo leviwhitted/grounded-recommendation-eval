@@ -1,0 +1,18 @@
+{
+  "request_id": "scenario-001-recgen-req-01",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:31:00Z",
+  "subject": "Synthetic request for recommendation draft generation from fixture evidence bundle",
+  "evidence_bundle_ids": [
+    "scenario-001-bundle-01"
+  ],
+  "request_scope": "Generate a compact recommendation draft aligned to existing contracts without introducing runtime assumptions.",
+  "constraints": [
+    "Keep confidence and priority coarse.",
+    "Surface unknowns explicitly."
+  ],
+  "known_unknowns": [
+    "Runtime producer/consumer ownership for this flow remains undefined in committed code."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production request input."
+}

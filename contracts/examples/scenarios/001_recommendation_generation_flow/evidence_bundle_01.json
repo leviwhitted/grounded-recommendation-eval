@@ -1,0 +1,61 @@
+{
+  "bundle_id": "scenario-001-bundle-01",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:30:00Z",
+  "subject": "Synthetic baseline evidence for recommendation generation fixture flow",
+  "sources": [
+    {
+      "source_id": "scenario-001-src-01",
+      "kind": "repo_file",
+      "origin": "contracts/README.md",
+      "retrieved_at": "2026-04-08T20:20:00Z",
+      "provenance_note": "Synthetic fixture reference to committed contract index."
+    },
+    {
+      "source_id": "scenario-001-src-02",
+      "kind": "repo_file",
+      "origin": "contracts/recommendation_draft.schema.json",
+      "retrieved_at": "2026-04-08T20:21:00Z",
+      "provenance_note": "Synthetic fixture reference for generated draft contract shape."
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "scenario-001-fnd-01",
+      "statement": "The repository includes committed contracts for evidence, recommendation generation I/O, draft recommendation, outcome, and evaluation artifacts.",
+      "source_ids": [
+        "scenario-001-src-01",
+        "scenario-001-src-02"
+      ]
+    }
+  ],
+  "inferences": [
+    {
+      "inference_id": "scenario-001-inf-01",
+      "statement": "A contract-first recommendation flow can be demonstrated end-to-end using synthetic artifacts without asserting runtime behavior.",
+      "basis_source_ids": [
+        "scenario-001-src-01",
+        "scenario-001-src-02"
+      ],
+      "assumption_note": "Interpretive planning inference for fixture construction only."
+    }
+  ],
+  "unknowns": [
+    {
+      "unknown_id": "scenario-001-unk-01",
+      "question_or_gap": "Which committed runtime component will first produce recommendation generation responses?",
+      "reason": "No runtime producer/consumer implementation is committed in this sparse phase."
+    }
+  ],
+  "confidence": {
+    "level": "medium",
+    "rationale": "Grounded in committed contract artifacts, with uncertainty limited to runtime ownership details."
+  },
+  "freshness_note": "Synthetic fixture evidence snapshot for contract linkage demonstration only.",
+  "related_files": [
+    "contracts/RECOMMENDATION_GENERATION_REQUEST_SPEC.md",
+    "contracts/RECOMMENDATION_GENERATION_RESPONSE_SPEC.md",
+    "contracts/RECOMMENDATION_DRAFT_SPEC.md"
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production evidence."
+}

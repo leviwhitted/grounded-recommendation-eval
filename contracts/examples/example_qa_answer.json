@@ -1,0 +1,37 @@
+{
+  "answer_id": "qa-answer-2026-05-17-001",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-05-17T19:30:00Z",
+  "question": "How should I use Market Brew to prioritize content work after calibration?",
+  "answer": "Start by reviewing the Visibility Launchpad opportunity ordering and the related content gap signals so prioritization is driven by modeled gaps, not only keyword volume. Use the launch priority and content gap cues to decide what should flow into Content Booster first, then use the Forecast Rankings workflow to model expected impact before implementation. This sequencing keeps planning tied to model-grounded opportunity scoring and measurable projected outcomes.",
+  "citations": [
+    {
+      "atom_id": "MB-ANALYSIS-RULE-0012",
+      "atom_title": "Visibility Launchpad Launch Priority - 2-Factor Weighted Scoring Rule",
+      "relevance_note": "Defines weighted launch priority and content gap logic used for opportunity ordering."
+    },
+    {
+      "atom_id": "MB-ANALYSIS-DEF-0041",
+      "atom_title": "Content Gap Signal",
+      "relevance_note": "Explains how dissimilarity to query intent surfaces missing coverage for planning."
+    },
+    {
+      "atom_id": "MB-FORECASTING-PROC-0001",
+      "atom_title": "Using the SEO Forecasting Calculator",
+      "relevance_note": "Provides the procedure for modeling likely ranking and revenue impact before rollout."
+    }
+  ],
+  "unknowns": [
+    "The snapshot does not provide a fixed numeric threshold for when a content gap is considered sufficient to auto-promote an item into execution."
+  ],
+  "confidence": {
+    "level": "medium",
+    "rationale": "Core planning flow is covered by cited atoms, but the threshold question remains unresolved in this snapshot."
+  },
+  "freshness_note": "Grounded in vendored KB snapshot export 2026-05-17_115638_POST_P2.",
+  "related_atom_ids": [
+    "MB-CONTENT-PROC-0008",
+    "MB-ANALYSIS-DEF-0035"
+  ],
+  "notes": "Synthetic contract example for validator coverage."
+}

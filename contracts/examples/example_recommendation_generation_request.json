@@ -1,0 +1,18 @@
+{
+  "request_id": "example-recgen-req-2026-04-08-001",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:05:00Z",
+  "subject": "Synthetic request to generate recommendations from known evidence bundles",
+  "evidence_bundle_ids": [
+    "example-bundle-2026-04-08-001"
+  ],
+  "request_scope": "Generate compact, evidence-grounded recommendations for current contract-layer progression without assuming runtime implementation details.",
+  "constraints": [
+    "Prefer conservative confidence where evidence is incomplete.",
+    "Do not introduce runtime, tooling, or deployment assumptions."
+  ],
+  "known_unknowns": [
+    "The first committed runtime producer/consumer for recommendations is not established."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production input."
+}

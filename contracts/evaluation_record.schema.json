@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/leviwhitted/clixsy-oracle-agent/blob/main/contracts/evaluation_record.schema.json",
+  "title": "Oracle Evaluation Record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation_record_id",
+    "project_id",
+    "created_at",
+    "subject",
+    "related_recommendation_ids",
+    "related_outcome_record_ids",
+    "evaluation_result",
+    "evaluation_summary",
+    "confidence",
+    "unknowns"
+  ],
+  "properties": {
+    "evaluation_record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$"
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "related_recommendation_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "related_outcome_record_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "related_evidence_bundle_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evaluation_result": {
+      "type": "string",
+      "enum": [
+        "successful",
+        "partially_successful",
+        "unsuccessful",
+        "inconclusive"
+      ]
+    },
+    "evaluation_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "rationale"
+      ],
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "recommendation_id": "scenario-001-rec-01",
+  "project_id": "clixsy-oracle-agent",
+  "created_at": "2026-04-08T20:35:00Z",
+  "subject": "Synthetic persisted recommendation derived from scenario-001 recommendation draft",
+  "title": "Proceed with contract-linked recommendation materialization planning",
+  "summary": "Represent recommendation outputs as persisted recommendation artifacts while keeping runtime behavior undefined at this stage.",
+  "recommendation_type": "implement",
+  "supporting_evidence_bundle_ids": [
+    "scenario-001-bundle-01"
+  ],
+  "rationale": "The generated draft and supporting evidence indicate a coherent contract chain, justifying a persisted recommendation artifact for downstream references.",
+  "confidence": {
+    "level": "medium",
+    "rationale": "Grounded in synthetic evidence and draft outputs, with remaining uncertainty around runtime implementation ownership."
+  },
+  "priority": {
+    "level": "high",
+    "urgency": "soon",
+    "rationale": "Persisted recommendation references simplify subsequent outcome and evaluation linkage."
+  },
+  "assumptions": [
+    "Materialization from draft to persisted recommendation can be represented as an artifact transition without workflow semantics."
+  ],
+  "unknowns": [
+    "Which runtime component will own recommendation persistence in future implementation."
+  ],
+  "suggested_next_steps": [
+    "Link outcome records to this recommendation_id for observed-result tracking.",
+    "Link evaluation records to recommendation and outcome artifacts for assessment."
+  ],
+  "notes": "Synthetic example only. Not client data and not MarketBrew production recommendation."
+}
