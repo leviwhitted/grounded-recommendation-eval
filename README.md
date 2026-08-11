@@ -57,6 +57,11 @@ after generation and before anything reaches the caller, and it checks:
 4. Every cited `finding_id` exists in this request's evidence bundle.
 5. **The trace textually references at least one cited `atom_id` and one cited `finding_id`.**
 
+Be precise about check five, because it is weaker than it first sounds: it requires *any one* atom id and
+*any one* finding id to appear in the trace. It does **not** require every identifier the recommendation
+cites to be referenced, and it does not evaluate the reasoning. A recommendation citing three atoms passes
+if the trace mentions one.
+
 Failing any check **drops that recommendation**. Not a warning, not a lowered score. Survivors are then
 ranked.
 

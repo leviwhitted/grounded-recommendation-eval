@@ -29,7 +29,10 @@ The engine's integrity gate was described as making unsupported recommendations 
 That claim was wrong, and it was wrong in a way that only measurement exposes.
 
 The gate enforces **referential validity**: cited identifiers must exist, and the reasoning
-trace must textually reference the identifiers it claims to reason from. It does **not** verify
+trace must textually reference **at least one** cited identifier of each kind. Note the precise
+weakness: it requires *any one* atom id and *any one* finding id to appear, **not every identifier the
+recommendation claims to reason from.** A recommendation citing three atoms passes if the trace mentions
+one of them. It does **not** verify
 that the reasoning is sound, that the records say what the trace claims, or that the
 recommended action follows from the premises.
 
